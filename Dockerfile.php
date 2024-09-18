@@ -8,7 +8,7 @@ RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 RUN locale-gen fr_FR.UTF-8
 WORKDIR /app
 COPY ./composer.json .
-RUN composer install
 COPY . .
+RUN composer install
 RUN symfony server:ca:install
 CMD ["symfony", "serve"]

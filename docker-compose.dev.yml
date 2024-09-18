@@ -32,7 +32,7 @@ services:
   node:
     build:
       context: .
-      dockerfile: Dockerfile.encore.dev
+      dockerfile: Dockerfile.vite.dev
     volumes:
       - type: volume
         source: tls
